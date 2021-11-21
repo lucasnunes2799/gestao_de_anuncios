@@ -5,3 +5,4 @@ from adverts.models import Anuncios
 class AnunciosViewSet(ModelViewSet):
     queryset = Anuncios.objects.all()
     serializer_class = AnunciosSerializer
+    filterset_fields = ('id','Empresa')

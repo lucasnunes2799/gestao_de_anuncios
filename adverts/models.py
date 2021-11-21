@@ -1,6 +1,7 @@
 from django.db import models
 from center.models import Empresa
 
+
 class Anuncios(models.Model):
     nome = models.CharField(max_length=150, verbose_name='Nome do Anuncio')
     data_inicial = models.DateField()
